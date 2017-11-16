@@ -16,6 +16,11 @@
                 margin: 0;
                 padding: 0;
             }
+
+            body {
+                background: url(img/LJ/tape.png) no-repeat;
+                background-size: 100% 100%;
+            }
             #wrapper {
                 /*background-color: red;*/
                 width: 100vw;
@@ -37,6 +42,16 @@
                 -ms-transform: rotate(90deg);
                 -o-transform: rotate(90deg);
                 transform: rotate(90deg);
+            }
+            
+            #ipadcontent {
+               position: fixed;
+               
+                max-height: 20%;
+                max-width: 20%;
+                top: 15%;
+                right: 4%;
+                z-index: -1;
             }
 
             #glasslong {
@@ -71,9 +86,17 @@
             }
 
             #hat {
+                top: -5%;
+                left: 3%;
+                -webkit-transform:rotate(-80deg);
+                  -moz-transform: rotate(-80deg);
+                   -ms-transform: rotate(-80deg);
+                    -o-transform: rotate(-80deg);
+                       transform: rotate(-80deg);
                 max-height: 40%;
                 max-width: 40%;
             }
+
         </style>
 
     </head>
@@ -83,7 +106,11 @@
             <img id="glasssmall" src="img/LJ/glasssmall.png"/>
             <img id="hat" src="img/LJ/hat.png"/>
             <img id="ipad" src="img/LJ/ipad.png"/>
+            	<video id="ipadcontent" autoplay="true">
+					<source src="img/LJ/suncloud.mp4" type="video/mp4">
+				</video>
             <img id="tubelight" src="img/LJ/tubelight.png"/>
+            <div id="tape"></div>
         </div>
     </body>
     
