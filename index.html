@@ -16,6 +16,11 @@
                 margin: 0;
                 padding: 0;
             }
+
+            body {
+                background: url(img/LJ/tape.png) no-repeat;
+                background-size: 100% 100%;
+            }
             #wrapper {
                 /*background-color: red;*/
                 width: 100vw;
@@ -42,10 +47,10 @@
             #ipadcontent {
                position: fixed;
                
-                max-height: 30%;
-                max-width: 30%;
-                top: 1%;
-                right: 1%;
+                max-height: 20%;
+                max-width: 20%;
+                top: 15%;
+                right: 4%;
                 z-index: -1;
             }
 
@@ -81,16 +86,17 @@
             }
 
             #hat {
+                top: -5%;
+                left: 3%;
+                -webkit-transform:rotate(-80deg);
+                  -moz-transform: rotate(-80deg);
+                   -ms-transform: rotate(-80deg);
+                    -o-transform: rotate(-80deg);
+                       transform: rotate(-80deg);
                 max-height: 40%;
                 max-width: 40%;
             }
 
-            #tape {
-                width: 100vw;
-                height: 100vh;
-                background: url(img/LJ/tape.png)
-                background-size: 100% 50%;
-            }
         </style>
 
     </head>
