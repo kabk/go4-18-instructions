@@ -52,6 +52,19 @@ see http://kabk.github.io/govt4-coding/responsive-layout.html -->
             left:30vw;
             top: 60vh;
             position:relative;
+
+              animation: 0.5s normal infinite 
+              fadein; -webkit-animation: 0.5s normal infinite fadein;
+                opacity:0
+                }
+
+                 @keyframes fadein{from{opacity:0}
+                 to{opacity:1}
+                 }
+      
+                @-webkit-keyframes fadein{from{opacity:0}
+                 to{opacity:1}
+
         }
         #oval {
             width:10%;
