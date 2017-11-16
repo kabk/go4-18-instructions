@@ -7,15 +7,50 @@
     <!-- You need this so the browser can understand ‘typographic quotes’ and accented characters éëê etc.-->
     <meta name="viewport" content="width=device-width, initial-scale=1"><!-- This tag is important if we make a responsive site
 see http://kabk.github.io/govt4-coding/responsive-layout.html -->
-    <style></style>
+    <style>
+        body {
+            background-color: darkgreen;
+        }
+        
+        img {
+            position:absolute;
+        }
+        
+        #images img {
+            width:20%;
+        }
+        
+        #3 {
+           -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+            margin-top:50px;
+            margin-left:10px;
+        }
+            
+    
+    </style>
 
     </head>
     <body>
+        <div id="images">
+            <div id="1">
         <img src="afb1.png">
+            </div>
+            <div id="2">
         <img src="afb2.png">
+            </div>
+            <div id="3">
         <img src="afb3.png">
+            </div>
+            <div id="4">
         <img src="afb4.png">
+            </div>
+            <div id="5">
         <img src="afb5.png">
+            </div>
+            
+        </div>
             <a href="08.html">Previous</a>
             <a href="10.html">Next</a>
 
