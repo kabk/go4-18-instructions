@@ -5,6 +5,8 @@
     <title>05</title><!-- This is the title shown in the Window bar -->
     <meta charset="utf-8">
     <!-- You need this so the browser can understand ‘typographic quotes’ and accented characters éëê etc.-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1"><!-- This tag is important if we make a responsive site
 see http://kabk.github.io/govt4-coding/responsive-layout.html -->
     <style>
@@ -29,9 +31,15 @@ see http://kabk.github.io/govt4-coding/responsive-layout.html -->
             position:fixed;
             margin: 0 auto;
             margin-top:50vh;
+            font-size:25px;
+            color:green;
+            font-family: 'Open Sans', sans-serif;
         /*    text-align: center;*/
         }
+        a:hover {
+            color:pink;
 
+        }
         #circles {
             top:5vh;
             position:absolute;
@@ -48,6 +56,7 @@ see http://kabk.github.io/govt4-coding/responsive-layout.html -->
             @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
             @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
             @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+        
         #stick {
             left:30vw;
             top: 60vh;
@@ -76,7 +85,18 @@ see http://kabk.github.io/govt4-coding/responsive-layout.html -->
             top:10vh;
             left:30vw;
             position:relative;
-        }
+ 
+                
+    -webkit-animation: move 4s linear infinite;
+    -moz-animation:move 4s linear infinite;
+    animation:move 4s linear infinite;
+}
+@-moz-keyframes move { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes move { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes move { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+        
     </style>
     </head>
     <body>
