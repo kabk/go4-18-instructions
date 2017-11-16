@@ -6,19 +6,22 @@
     <meta charset="utf-8">
     <!-- You need this so the browser can understand ‘typographic quotes’ and accented characters éëê etc.-->
     <meta name="viewport" content="width=device-width, initial-scale=1"><!-- This tag is important if we make a responsive site
-see http://kabk.github.io/govt4-coding/responsive-layout.html -->
+    see http://kabk.github.io/govt4-coding/responsive-layout.html -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <style>
         body{
-            background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+            background-color: magenta;
         }
         div {
             position: fixed;
-            border: 1px dashed magenta;
-            background-color: lime;
+            /*border: 1px dashed magenta;*/
+            /*background-color: lime;*/
             mix-blend-mode: difference;
+            transform: rotate(0deg);
+            transition: 80s ease;
         }
         img{
-            /*mix-blend-mode: darken;*/
+            /*mix-blend-mode: ;*/
             /*height: 100%;*/
             width: auto;
             height: auto;
@@ -31,10 +34,10 @@ see http://kabk.github.io/govt4-coding/responsive-layout.html -->
             height: 29vh;
         }
         #img2{
-            top: 30%;
-            left: 30%;
-            height: 50vh;
-            width: 30vw;
+            top: 20%;
+            left: 48%;
+            /* height: 50vh; */
+            width: 21vw;
         }
 
         #img2 img{
@@ -43,8 +46,10 @@ see http://kabk.github.io/govt4-coding/responsive-layout.html -->
         }
 
         #img3{
-            width: 40vw;
-            height: 40vh;
+            width: 4vw;
+            /* height: 40vh; */
+            top: 74vh;
+            right: 11vw;
         }
 
         #img3 img{
@@ -72,6 +77,17 @@ see http://kabk.github.io/govt4-coding/responsive-layout.html -->
         }
         #controls{
             bottom: 5px;
+            font-family: sans-serif;
+            padding: 20px;
+
+        }
+
+        .rot{
+            transform: rotate(1800deg);
+        }
+
+        a{
+            color: blue;
         }
     </style>
 
@@ -82,7 +98,7 @@ see http://kabk.github.io/govt4-coding/responsive-layout.html -->
         <div id="img1" class="imgFoo"><img src='ingredients/andrdaniel0.png'></div>
         <div id="img2" class="imgFoo"><img src='ingredients/ad1.png'></div>
         <div id="img3" class="imgFoo"><img src='ingredients/ad2.png'></div>
-        <div id="img4" class="imgFoo"><img src='ingredients/andrdaniel3.png'></div>
+        <div id="img4" class="imgFoo"><img src='ingredients/ad3.png'></div>
         <div id="img5" class="imgFoo"><img src='ingredients/andrdaniel4.png'></div>
 
         <div id="controls">
@@ -90,5 +106,13 @@ see http://kabk.github.io/govt4-coding/responsive-layout.html -->
             <a href="09.html">Next</a>
         </div>
 
+        <script type="text/javascript">
+            // setTimeout(function(){ $("div").addClass("rot"); }, 30);
+
+            $('div').hover(function(){
+                $(this).addClass("rot");
+                console.log($(this));
+            });
+        </script>
     </body>
 </html>
