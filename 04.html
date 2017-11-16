@@ -8,28 +8,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"><!-- This tag is important if we make a responsive site
 see http://kabk.github.io/govt4-coding/responsive-layout.html -->
     <style>
+        @page {
+            size: 21cm 29.7cm;
+            margin:0;
+        }
+
+
+        nav{position:fixed;bottom:1vw;left:5vw;}
+
+        body{margin:0 auto;}
         a{text-decoration:none;color:red;}
         a:hover{text-decoration:line-through;}
+
+        img{height:auto;width:auto;text-align:center;}
+
+        #frame{position:fixed;width:90vw;height:90vh;top:5vh;left:50%;margin-left:-45vw;border:solid 1px black;}
+
+        #map{
+            background:red;
+            height:50%;
+            width:40%;
+            position:absolute;
+            right:2%;
+            top:2%;
+        }
+        #square{
+            background: red;
+            position:absolute;
+            height:80%;
+            width:80%;
+            
+            left:50%;
+            margin-left:-40%;
+
+            top:50%;
+            margin-top:-40%;
+            transform:rotate(-10deg);
+            transform-origin:center;
+            
+
+        }
+        #wood{
+            background:red;
+            height:50%;
+            width:40%;
+            position:absolute;
+            right:2%;
+            top:2%;
+        }
+
+        #plastic{position:absolute; left:10%;top:0px;}
+
+
 
 
     </style>
 
     </head>
     <body>
-            <h1>Area: Kay en Thijmen</h1>
-            asdfasdfasdf
+        
+        
 
-            <img src="04/plastic.svg">
-            <img src="04/wood.svg">
-            <img src="04/cardboard.svg">
-            <img src="04/map.svg">
-            <img src="04/mdf.svg">
-            <img src="04/square.svg">
-
-            <a href="03.html">Previous</a>
-
-            <a href="05.html">Next</a>
-
-            <a href="01.html">Available for sponsoring </a>
+            <div id="frame">
+                <div id="map"><img src="04/map.svg"></div>
+                <div id="square"><img src="04/square.svg"></div>
+                <div id="wood"><img src="04/wood.svg"></div>
+                <!-- <div id="plastic"><img src="04/plastic.svg"></div>
+                
+                <div id="cardboard"><img src="04/cardboard.svg"></div>
+                
+                <div id="mdf"><img src="04/mdf.svg"></div>
+                 -->
+            </div>
+           
+                
+            <nav>
+                Area: Kay en Thijmen
+                <a href="03.html">Previous</a>
+                <a href="05.html">Next</a>
+                <a href="01.html">Available for sponsoring </a>
+            </nav>
     </body>
 </html>
