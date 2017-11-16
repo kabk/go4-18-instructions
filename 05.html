@@ -48,6 +48,7 @@ see http://kabk.github.io/govt4-coding/responsive-layout.html -->
             @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
             @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
             @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+        
         #stick {
             left:30vw;
             top: 60vh;
@@ -76,7 +77,18 @@ see http://kabk.github.io/govt4-coding/responsive-layout.html -->
             top:10vh;
             left:30vw;
             position:relative;
-        }
+ 
+                
+    -webkit-animation: move 4s linear infinite;
+    -moz-animation:move 4s linear infinite;
+    animation:move 4s linear infinite;
+}
+@-moz-keyframes move { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes move { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes move { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+        
     </style>
     </head>
     <body>
