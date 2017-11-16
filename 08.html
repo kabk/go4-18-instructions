@@ -7,15 +7,88 @@
     <!-- You need this so the browser can understand ‘typographic quotes’ and accented characters éëê etc.-->
     <meta name="viewport" content="width=device-width, initial-scale=1"><!-- This tag is important if we make a responsive site
 see http://kabk.github.io/govt4-coding/responsive-layout.html -->
-    <style></style>
+    <style>
+        body{
+            background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+        }
+        div {
+            position: fixed;
+            border: 1px dashed magenta;
+            background-color: lime;
+            mix-blend-mode: difference;
+        }
+        img{
+            /*mix-blend-mode: darken;*/
+            /*height: 100%;*/
+            width: auto;
+            height: auto;
+            max-height: 100%;
+            max-width: 100%;
+        }
+        #img1{
+            top: 13%;
+            left: 4%;
+            height: 29vh;
+        }
+        #img2{
+            top: 30%;
+            left: 30%;
+            height: 50vh;
+            width: 30vw;
+        }
+
+        #img2 img{
+            width: 100%;
+            /*height: 100%;*/
+        }
+
+        #img3{
+            width: 40vw;
+            height: 40vh;
+        }
+
+        #img3 img{
+            width: 100%;
+            /*height: 100%;*/
+        }
+        #img4{
+            height: 55vh;
+            top: 6vh;
+            left: 21vw;
+        }
+
+
+
+        #img5{
+            width: 98vw;
+            /*height: 40vh;*/
+            top: 49%;
+            left: 50%;
+            transform: translate(-50%,0);
+        }
+
+        #img5 img{
+            transform: rotate(-26deg);
+        }
+        #controls{
+            bottom: 5px;
+        }
+    </style>
 
     </head>
 
     <body>  
 
-THis is our file bitches
+        <div id="img1" class="imgFoo"><img src='ingredients/andrdaniel0.png'></div>
+        <div id="img2" class="imgFoo"><img src='ingredients/ad1.png'></div>
+        <div id="img3" class="imgFoo"><img src='ingredients/ad2.png'></div>
+        <div id="img4" class="imgFoo"><img src='ingredients/andrdaniel3.png'></div>
+        <div id="img5" class="imgFoo"><img src='ingredients/andrdaniel4.png'></div>
+
+        <div id="controls">
             <a href="07.html">Previous</a>
             <a href="09.html">Next</a>
+        </div>
 
     </body>
 </html>
