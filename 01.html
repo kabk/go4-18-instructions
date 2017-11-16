@@ -7,12 +7,93 @@
     <!-- You need this so the browser can understand ‘typographic quotes’ and accented characters éëê etc.-->
     <meta name="viewport" content="width=device-width, initial-scale=1"><!-- This tag is important if we make a responsive site
 see http://kabk.github.io/govt4-coding/responsive-layout.html -->
-    <style></style>
+    <style>
+
+    #Prev a{
+        position: fixed;
+        float: left;
+        font-family: sans-serif;
+        font-size: 20px;
+        color: black;
+    }
+
+    #Next a{
+        text-align: right;
+        float: right;
+        font-family: sans-serif;
+        font-size: 20px;
+        color: black;
+    }
+
+    #one {
+        z-index: 4;
+        position: absolute;
+        /*background-color: red;*/
+        -ms-transform: rotate(45deg); /* IE 9 */
+        -webkit-transform: rotate(45deg); /* Safari */
+        transform: rotate(45deg); /* Standard syntax */
+        margin-left: 12%;
+        top: 450px;
+  
+    }
+
+    #two {
+        z-index: 3;
+        position: absolute;
+      /*  background-color: blue;*/
+        -ms-transform: rotate(45deg); /* IE 9 */
+        -webkit-transform: rotate(45deg); /* Safari */
+        transform: rotate(45deg); /* Standard syntax */
+        margin-left: 55%;
+        top: 140px;
+    }
+
+    #three {
+        z-index: 5;
+        position: absolute;
+        /*background-color: yellow;*/
+         -ms-transform: rotate(-15deg); /* IE 9 */
+        -webkit-transform: rotate(-15deg); /* Safari */
+        transform: rotate(-15deg); /* Standard syntax */
+        margin-left: 70%;
+        top: 550px;
+    }
+
+    #four {
+        z-index: 1;
+        position: absolute;
+        /*background-color: purple;*/
+        -ms-transform: rotate(90deg); /* IE 9 */
+        -webkit-transform: rotate(90deg); /* Safari */
+        transform: rotate(90deg); /* Standard syntax */
+        margin-left: 20%;
+        top: 350px;
+    }
+
+    #five {
+        z-index: 2;
+        position: absolute;
+        /*background-color: green;*/
+               -ms-transform: rotate(-40deg); /* IE 9 */
+        -webkit-transform: rotate(-40deg); /* Safari */
+        transform: rotate(-40deg); /* Standard syntax */
+        margin-left: 67%;
+        top: 15px;
+
+    }
+    </style>
+
 
     </head>
     <body>
-            <a href="index.html">Previous</a>
-            <a href="02.html">Next</a>
+            <div id="Prev"><a href="index.html">PREVIOUS</a></div>
+            <div id="Next"><a href="02.html">NEXT</a></div>
+
+            <img id="one" src="ingredients/kerrin_01.png">
+            <img id="two" src="ingredients/kerrin_02.png">
+            <img id="three" src="ingredients/kerrin_03.png">
+            <img id="four" src="ingredients/kerrin_04.png">
+            <img id="five" src="ingredients/kerrin_05.png">
 
     </body>
 </html>
