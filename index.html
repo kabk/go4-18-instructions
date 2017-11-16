@@ -11,12 +11,93 @@
                                                                                   see http://kabk.github.io/govt4-coding/responsive-layout.html -->
 
         
-        <style></style>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            #wrapper {
+                /*background-color: red;*/
+                width: 100vw;
+                height: 100vh;
+            }
+            img {
+                position: fixed;
+                /*max-height: 40%;
+                max-width: 40%;*/
+            }
+
+            #ipad {
+                max-height: 40%;
+                max-width: 40%;
+                top: 5%;
+                right: 5%;
+                -webkit-transform:rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                transform: rotate(90deg);
+            }
+            
+            #ipadcontent {
+               position: fixed;
+               
+                max-height: 30%;
+                max-width: 30%;
+                top: 1%;
+                right: 1%;
+                z-index: -1;
+            }
+
+            #glasslong {
+                max-height: 40%;
+                max-width: 40%;
+                top: -5%;
+                right: -2%;
+                z-index: 100;
+                -webkit-transform:rotate(60deg);
+                -moz-transform: rotate(60deg);
+                -ms-transform: rotate(60deg);
+                -o-transform: rotate(60deg);
+                transform: rotate(60deg);
+            }
+
+            #glasssmall {
+                width: 5%;
+                top: 25%;
+                right: 15%;
+            }
+
+            #tubelight {
+                -webkit-transform:rotate(-45deg);
+                  -moz-transform: rotate(-45deg);
+                   -ms-transform: rotate(-45deg);
+                    -o-transform: rotate(-45deg);
+                       transform: rotate(-45deg);
+                max-height: 120%;
+                max-width: 120%;
+                top: -10%;
+                left: 30%;
+            }
+
+            #hat {
+                max-height: 40%;
+                max-width: 40%;
+            }
+        </style>
 
     </head>
     <body>
-        <a href="13.html">Previous</a>
-        <a href="01.html">Next</a>
+        <div id="wrapper">
+            <img id="glasslong" src="img/LJ/glasslong.png"/>
+            <img id="glasssmall" src="img/LJ/glasssmall.png"/>
+            <img id="hat" src="img/LJ/hat.png"/>
+            <img id="ipad" src="img/LJ/ipad.png"/>
+            	<video id="ipadcontent" autoplay="true">
+					<source src="img/LJ/suncloud.mp4" type="video/mp4">
+				</video>
+            <img id="tubelight" src="img/LJ/tubelight.png"/>
+        </div>
     </body>
     
 </html>
