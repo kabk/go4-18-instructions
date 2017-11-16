@@ -2,17 +2,79 @@
 <html>
 <head>
 
-    <title>This is Asya & Jan</title><!-- This is the title shown in the Window bar -->
+    <title>06</title><!-- This is the title shown in the Window bar -->
     <meta charset="utf-8">
     <!-- You need this so the browser can understand ‘typographic quotes’ and accented characters éëê etc.-->
     <meta name="viewport" content="width=device-width, initial-scale=1"><!-- This tag is important if we make a responsive site
 see http://kabk.github.io/govt4-coding/responsive-layout.html -->
-    <style></style>
+    <style>
+        .object{
+            position: absolute;
+            
+        }
+        #frame{
+            width: calc(350px * 2);
+            height:calc(496px * 2);
+            border: 1px solid black;
+            transform: rotate(-90deg);
+            left: 20%;
+            top:-18%;
+            background-color: red;
+        }
+        #mask{
+            width: 200px;
+            height: auto;
+            padding-left: 50px;
+          /*  padding-top: 50px;*/
+            transform: rotate(-20deg);
+            left: 0px;
+            top: 0px;
+        }
+        #beam{
+            transform: rotate(-100deg);
+            bottom: 0px;
+            padding-bottom: 150px;
+        }
+        #dot{
+            width: 100px;
+            left: 50%;
+            top: 60%;
+
+        }
+        #troax{
+            bottom: 0%;
+            left: 0%;
+            width: 40%;
+        }
+        #drop{
+            transform: rotate(-90deg);
+            width: 80%;
+            top: 27%;
+        }
+        img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .movethisdown{
+            position: absolute;
+            bottom: 0px;
+        }
+
+    </style>
 
     </head>
     <body>
+    <div class= "object" id="frame">
+        <div class="object" id ="mask"><img src="ingredients/asya_jan/mask.png"/></div>
+        <div class="object" id ="beam"><img src="ingredients/asya_jan/beam.png"/></div>
+        <div class="object" id ="dot"><img src="ingredients/asya_jan/dot.png"/></div>
+        <div class="object" id ="troax"><img src="ingredients/asya_jan/troax.png"/></div>
+        <div class="object" id ="drop"><img src="ingredients/asya_jan/drop.png"/></div>
+    </div>
+   <div class="movethisdown">
             <a href="05.html">Previous</a>
             <a href="07.html">Next</a>
+            </div>
 
     </body>
 </html>
